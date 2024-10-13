@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meowspet</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a href="index.html">Назад на головну</a>
+    <h1>Задайте ваше питання</h1>
+    <form action="/submit-question" method="POST">
+      <label for="name">Ваше ім'я:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Ваш email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="question">Ваше питання:</label>
+      <textarea id="question" name="question" required></textarea>
+
+      <button type="submit">Надіслати питання</button>
+    </form>
+  </body>
+</html>

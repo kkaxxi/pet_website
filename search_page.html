@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meowspet</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a href="index.html">Назад на головну</a>
+
+    <h2>Фільтри пошуку</h2>
+
+    <form>
+      <label>Категорія</label><br />
+      <input type="radio" name="category" value="Не важливо" checked /> Не
+      важливо<br />
+      <input type="radio" name="category" value="Кішка" /> Кішка<br />
+      <input type="radio" name="category" value="Собака" /> Собака<br />
+
+      <label>Стать тварини</label><br />
+      <input type="radio" name="gender" value="Не важливо" checked /> Не
+      важливо<br />
+      <input type="radio" name="gender" value="Ж" /> Ж<br />
+      <input type="radio" name="gender" value="М" /> М<br />
+
+      <label>Вік тварини</label><br />
+      <input type="number" name="age_min" min="0" max="25" value="0" /> років
+      <br />
+      <input type="number" name="age_max" min="0" max="25" value="25" /> років
+      <br />
+
+      <label>Розмір</label><br />
+      <input type="radio" name="size" value="Не важливо" checked /> Не
+      важливо<br />
+      <input type="radio" name="size" value="Маленький" /> Маленький<br />
+      <input type="radio" name="size" value="Середній" /> Середній<br />
+      <input type="radio" name="size" value="Великий" /> Великий<br />
+
+      <label>Тривалість перебування у притулку</label><br />
+      <input type="number" name="shelter_time_min" min="0" max="25" value="0" />
+      років<br />
+      <input
+        type="number"
+        name="shelter_time_max"
+        min="0"
+        max="25"
+        value="25"
+      />
+      років<br />
+
+      <label>Показувати з притулків</label><br />
+      <select name="shelters">
+        <option value="Усі">Усі</option>
+      </select>
+
+      <button type="button">Очистити фільтри</button>
+      <button type="submit">Застосувати фільтри</button>
+    </form>
+
+    <h3>Знайдено 197 тварин</h3>
+
+    <article class="result-item">
+      <h4>Стелла</h4>
+      <img
+        src="./images/animals/stella.png"
+        alt="Стелла"
+        style="width: 400px; height: auto"
+      />
+      <p>Собака</p>
+      <p>Вік: 1 рік</p>
+      <p>Стать: Ж</p>
+      <p>Порода: Акбаш</p>
+      <p>Розмір: Великий</p>
+      <p>Вакцинація: Невідомо</p>
+    </article>
+
+    <article class="result-item">
+      <h4>Мілка</h4>
+      <img
+        src="./images/animals/luky.png"
+        alt="Мілка"
+        style="width: 400px; height: auto"
+      />
+      <p>Кішка</p>
+      <p>Вік: 1 рік</p>
+      <p>Стать: Ж</p>
+      <p>Порода: Невідома порода</p>
+      <p>Розмір: Середній</p>
+      <p>Вакцинація: Невідомо</p>
+    </article>
+
+    <article class="result-item">
+      <h4>Стефані</h4>
+      <img
+        src="./images/animals/stefani.png"
+        alt="Стефані"
+        style="width: 400px; height: auto"
+      />
+      <p>Кішка</p>
+      <p>Вік: 1 рік</p>
+      <p>Стать: Ж</p>
+      <p>Порода: Невідома порода</p>
+      <p>Розмір: Маленький</p>
+      <p>Вакцинація: Невідомо</p>
+    </article>
+  </body>
+</html>
