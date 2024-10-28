@@ -5,177 +5,227 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meowspet</title>
+    <!--Styles-->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">
-          <img
-            src="./images/logo.svg"
-            alt="Логотип"
-            style="width: 50px; height: 50"
-          />
-        </a>
-        <ul>
-          <li><a class="header-link" href="#we-section">Про нас</a></li>
-          <li><a class="header-link" href="#help-section">Як допомогти</a></li>
-          <li lang="en"><a class="header-link" href="#faq-section">FAQ</a></li>
-          <li><a class="header-link" href="#contact-section">Контакти</a></li>
-        </ul>
-      </nav>
-      <a href="search_page.html">
-        <button class="button" type="button">Почати пошук</button>
-      </a>
+    <header class="header">
+      <div class="container">
+        <div class="container-header">
+          <nav class="nav">
+            <a href="./index.html">
+              <img
+                src="./images/logo.svg"
+                alt="Логотип"
+                style="width: 50px; height: 50px"
+              />
+            </a>
+            <ul class="menu">
+              <li><a class="link" href="#home-section">Головна</a></li>
+              <li><a class="link" href="#we-section">Про нас</a></li>
+              <li><a class="link" href="#help-section">Як допомогти</a></li>
+              <li lang="en"><a class="link" href="#faq-section">FAQ</a></li>
+              <li><a class="link" href="#contact-section">Контакти</a></li>
+            </ul>
+            <a href="search_page.html">
+              <button class="button" type="button">Почати пошук</button>
+            </a>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <main>
       <!-- Головний блок -->
-      <section class="home-section">
-        <h1 style="color: peru">Ласкаво просимо до Meowspet!</h1>
-        <p>
-          Ми допомагаємо безпритульним тваринам знайти дім і дбайливих
-          власників. Наша місія - врятувати і забезпечити турботу для кожної
-          тварини.
-        </p>
-        <img
-          src="./images/mainphoto.png"
-          alt="Цуцуня сидить на коті"
-          style="width: 500px; height: auto"
-        />
-        <a href="search_page.html">
-          <button class="button" type="button">Почати пошук</button>
-        </a>
-        <ul class="advantages-list">
-          <li>Легкий пошук</li>
-          <li>Персоналізовані рекомендації</li>
-          <li>Можливість онлайн заявки на усиновлення</li>
-        </ul>
+      <section id="home-section" class="home-section">
+        <div class="container">
+          <h1 class="main-title">Ласкаво просимо до Meowspet!</h1>
+          <p>
+            Ми допомагаємо безпритульним тваринам знайти дім і дбайливих
+            власників. Наша місія - врятувати і забезпечити турботу для кожної
+            тварини.
+          </p>
+          <img
+            src="./images/mainphoto.png"
+            alt="Цуцуня сидить на коті"
+            style="width: 500px; height: auto"
+          />
+          <a href="search_page.html">
+            <button class="button" type="button">Почати пошук</button>
+          </a>
+        </div>
+      </section>
+
+      <section class="advantages-section">
+        <div class="container">
+          <h2 class="visually-hidden">Наші переваги</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">Легкий пошук</li>
+            <li class="advantages-item">Персоналізовані рекомендації</li>
+            <li class="advantages-item">Можливість онлайн заявки</li>
+          </ul>
+        </div>
       </section>
 
       <!-- Про нас -->
-      <section class="we-section">
-        <h2 class="section-title">Хто ми і чим займаємося</h2>
-        <p>
-          <span>Meowspet</span> - це ініціатива, що базується на вірі в
-          благородну місію допомоги тваринам.
-        </p>
-        <h3>Нинішня проблема</h3>
-        <p>
-          Нині притулки переповнені, і їм не вистачає допомоги. Багато тварин
-          потребують нових домівок і турботи.
-        </p>
-        <img
-          src="./images/dogs_pink.jpg"
-          alt="Собаки на рожевому фоні"
-          style="width: 400px; height: auto"
-        />
-        <h3>Як ми вирішуємо цю проблему?</h3>
-        <p>
-          Наш проєкт збирає інформацію про тварин з різних притулків і об'єднує
-          її в одному місці. Ми створюємо зручну систему пошуку та усиновлення
-          тварин, щоб більше людей могли легко знаходити і брати вихованців із
-          притулків.
-        </p>
+      <section id="we-section" class="we-section">
+        <div class="container">
+          <h2 class="we-title section-title">Хто ми і чим займаємося</h2>
+          <p class="we-text">
+            <span>Meowspet</span> - це ініціатива, що базується на вірі в
+            благородну місію допомоги тваринам.
+          </p>
+          <h3>Нинішня проблема</h3>
+          <p>
+            Нині притулки переповнені, і їм не вистачає допомоги. Багато тварин
+            потребують нових домівок і турботи.
+          </p>
+          <img
+            class="image-float"
+            src="./images/dogs_pink.jpg"
+            alt="Собаки на рожевому фоні"
+            style="width: 400px; height: auto"
+          />
+          <h3>Як ми вирішуємо цю проблему?</h3>
+          <p>
+            Наш проєкт збирає інформацію про тварин з різних притулків і
+            об'єднує її в одному місці. Ми створюємо зручну систему пошуку та
+            усиновлення тварин, щоб більше людей могли легко знаходити і брати
+            вихованців із притулків.
+          </p>
+        </div>
       </section>
 
       <!-- Як допомогти -->
-      <section class="help-section">
-        <h2 class="section-title">Врятуй життя — допоможи нам</h2>
-        <p>Ми пропонуємо кілька способів допомогти:</p>
-        <ul>
-          <li>Волонтерство у притулках</li>
-          <li>Пожертви на підтримку притулків</li>
-          <li>Усиновлення тварин</li>
-        </ul>
-        <img
-          src="./images/dog_with_cat.png"
-          alt="Собака з кішкою обіймаються"
-          style="width: 400px; height: auto"
-        />
-        <a href="more_page.html">
-          <button class="button" type="button">Дізнатися більше</button>
-        </a>
+      <section id="help-section" class="help-section">
+        <div class="container">
+          <h2 class="section-title">Врятуй життя — допоможи нам</h2>
+          <p>Ми пропонуємо кілька способів допомогти:</p>
+          <ul>
+            <li>Волонтерство у притулках</li>
+            <li>Пожертви на підтримку притулків</li>
+            <li>Усиновлення тварин</li>
+          </ul>
+          <img
+            src="./images/dog_with_cat.png"
+            alt="Собака з кішкою обіймаються"
+            style="width: 400px; height: auto"
+          />
+          <a href="more_page.html">
+            <button class="button" type="button">Дізнатися більше</button>
+          </a>
+        </div>
       </section>
 
       <!-- Часті запитання -->
-      <section class="faq-section">
-        <h2 class="section-title">Часті запитання</h2>
-        <article>
-          <h3>Як подати заявку на усиновлення тварини?</h3>
-          <p>
-            Для цього потрібно вибрати тварину на сайті, заповнити онлайн-заявку
-            та дочекатися відповіді від нашого менеджера.
-          </p>
-        </article>
-        <article>
-          <h3>Які умови усиновлення?</h3>
-          <p>
-            Ми працюємо з офіційними притулками, тому вам потрібно підписати
-            договір та забезпечити належні умови утримання тварини.
-          </p>
-        </article>
-        <article>
-          <h3>Чи можна допомогти іншим чином?</h3>
-          <p>
-            Так, ми завжди раді волонтерам і фінансовій підтримці притулків.
-          </p>
-        </article>
-        <a href="form_page.html">
-          <button class="button" type="button">Задати додаткове питання</button>
-        </a>
+      <section id="faq-section" class="faq-section">
+        <div class="container">
+          <h2 class="section-title">Часті запитання</h2>
+
+          <ul>
+            <li>
+              <article>
+                <h3 class="faq-title">
+                  Як подати заявку на усиновлення тварини?
+                </h3>
+                <p class="faq-p">
+                  Для цього потрібно вибрати тварину на сайті, заповнити
+                  онлайн-заявку та дочекатися відповіді від нашого менеджера.
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3 class="faq-title">Які умови усиновлення?</h3>
+                <p class="faq-p">
+                  Ми працюємо з офіційними притулками, тому вам потрібно
+                  підписати договір та забезпечити належні умови утримання
+                  тварини.
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3 class="faq-title">Чи можна допомогти іншим чином?</h3>
+                <p class="faq-p">
+                  Так, ми завжди раді волонтерам і фінансовій підтримці
+                  притулків.
+                </p>
+              </article>
+            </li>
+          </ul>
+
+          <a href="form_page.html">
+            <button class="button" type="button">
+              Задати додаткове питання
+            </button>
+          </a>
+        </div>
       </section>
 
       <!-- Контакти -->
-      <section class="contact-section">
-        <h2 class="section-title">Наші контакти</h2>
-        <address>
-          <ul>
-            <li><a href="tel:380666230423">+380666230423</a></li>
-            <li>
-              <a href="mailto:konvisarkarina@gmail.com"
-                >konvisarkarina@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://maps.app.goo.gl/enbuS6Bc5yK3F9rT9"
-                target="_blank"
-                >вул. Богдана Гаврилишина, 24, Київ, Україна</a
-              >
-            </li>
-            <li><a href="#" target="_blank">Політика конфіденційності</a></li>
-          </ul>
-        </address>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.222666572442!2d30.471431976864373!3d50.45557817159323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce80bb14c36b%3A0x5c4eb5067e6b48c6!2sBohdana%20Havrylyshyna%20St%2C%2024%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sde!2sde!4v1726691168587!5m2!1sde!2sde"
-          width="300"
-          height="auto"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <section id="contact-section" class="contact-section">
+        <div class="container">
+          <h2 class="section-title">Наші контакти</h2>
+          <address>
+            <ul>
+              <li>
+                <a class="address-link" href="tel:380666230423"
+                  >+380666230423</a
+                >
+              </li>
+              <li>
+                <a class="address-link" href="mailto:konvisarkarina@gmail.com"
+                  >konvisarkarina@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-link"
+                  href="https://maps.app.goo.gl/enbuS6Bc5yK3F9rT9"
+                  target="_blank"
+                  >вул. Богдана Гаврилишина, 24, Київ, Україна</a
+                >
+              </li>
+              <li>
+                <a class="address-link" href="#" target="_blank"
+                  >Політика конфіденційності</a
+                >
+              </li>
+            </ul>
+          </address>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.222666572442!2d30.471431976864373!3d50.45557817159323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce80bb14c36b%3A0x5c4eb5067e6b48c6!2sBohdana%20Havrylyshyna%20St%2C%2024%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sde!2sde!4v1726691168587!5m2!1sde!2sde"
+            width="300"
+            height="auto"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
 
     <footer>
-      <nav>
-        <a href="./index.html">
-          <img
-            src="./images/logo.svg"
-            alt="Логотип"
-            style="width: 50px; height: 50"
-          />
-        </a>
-        <ul>
-          <li><a href="#we-section">Про нас</a></li>
-          <li><a href="#help-section">Як допомогти</a></li>
-          <li lang="en"><a href="#faq-section">FAQ</a></li>
-          <li><a href="#contact-section">Контакти</a></li>
-        </ul>
+      <nav class="footer">
+        <div class="container">
+          <a href="./index.html">
+            <img
+              src="./images/logo.svg"
+              alt="Логотип"
+              style="width: 50px; height: 50"
+            />
+          </a>
+          <ul>
+            <li><a class="back-link" href="#home-section">Головна</a></li>
+            <li><a class="back-link" href="#we-section">Про нас</a></li>
+            <li><a class="back-link" href="#help-section">Як допомогти</a></li>
+            <li lang="en"><a class="back-link" href="#faq-section">FAQ</a></li>
+            <li><a class="back-link" href="#contact-section">Контакти</a></li>
+          </ul>
+        </div>
       </nav>
-      <p>&copy; Дані захищені</p>
     </footer>
   </body>
 </html>

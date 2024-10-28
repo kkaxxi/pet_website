@@ -4,106 +4,141 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meowspet</title>
+    <title>Meowspet | Пошук тварин</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <a href="index.html">Назад на головну</a>
+    <section class="search-section">
+      <a class="back-link" href="index.html">Назад на головну</a>
 
-    <h2>Фільтри пошуку</h2>
+      <h2 class="filter-title">Фільтри пошуку</h2>
 
-    <form>
-      <label>Категорія</label><br />
-      <input type="radio" name="category" value="Не важливо" checked /> Не
-      важливо<br />
-      <input type="radio" name="category" value="Кішка" /> Кішка<br />
-      <input type="radio" name="category" value="Собака" /> Собака<br />
+      <form class="filter-form">
+        <div class="filter-group">
+          <label class="filter-label">Категорія</label><br />
+          <input type="radio" name="category" value="Не важливо" checked /> Не
+          важливо<br />
+          <input type="radio" name="category" value="Кішка" /> Кішка<br />
+          <input type="radio" name="category" value="Собака" /> Собака<br />
+        </div>
 
-      <label>Стать тварини</label><br />
-      <input type="radio" name="gender" value="Не важливо" checked /> Не
-      важливо<br />
-      <input type="radio" name="gender" value="Ж" /> Ж<br />
-      <input type="radio" name="gender" value="М" /> М<br />
+        <div class="filter-group">
+          <label class="filter-label">Стать тварини</label><br />
+          <input type="radio" name="gender" value="Не важливо" checked /> Не
+          важливо<br />
+          <input type="radio" name="gender" value="Ж" /> Ж<br />
+          <input type="radio" name="gender" value="М" /> М<br />
+        </div>
 
-      <label>Вік тварини</label><br />
-      <input type="number" name="age_min" min="0" max="25" value="0" /> років
-      <br />
-      <input type="number" name="age_max" min="0" max="25" value="25" /> років
-      <br />
+        <div class="filter-group">
+          <label class="filter-label">Вік тварини</label><br />
+          <input type="number" name="age_min" min="0" max="25" value="0" />
+          років<br />
+          <input type="number" name="age_max" min="0" max="25" value="25" />
+          років<br />
+        </div>
 
-      <label>Розмір</label><br />
-      <input type="radio" name="size" value="Не важливо" checked /> Не
-      важливо<br />
-      <input type="radio" name="size" value="Маленький" /> Маленький<br />
-      <input type="radio" name="size" value="Середній" /> Середній<br />
-      <input type="radio" name="size" value="Великий" /> Великий<br />
+        <div class="filter-group">
+          <label class="filter-label">Розмір</label><br />
+          <input type="radio" name="size" value="Не важливо" checked /> Не
+          важливо<br />
+          <input type="radio" name="size" value="Маленький" /> Маленький<br />
+          <input type="radio" name="size" value="Середній" /> Середній<br />
+          <input type="radio" name="size" value="Великий" /> Великий<br />
+        </div>
 
-      <label>Тривалість перебування у притулку</label><br />
-      <input type="number" name="shelter_time_min" min="0" max="25" value="0" />
-      років<br />
-      <input
-        type="number"
-        name="shelter_time_max"
-        min="0"
-        max="25"
-        value="25"
-      />
-      років<br />
+        <div class="filter-group">
+          <label class="filter-label">Тривалість перебування у притулку</label
+          ><br />
+          <input
+            type="number"
+            name="shelter_time_min"
+            min="0"
+            max="25"
+            value="0"
+          />
+          років<br />
+          <input
+            type="number"
+            name="shelter_time_max"
+            min="0"
+            max="25"
+            value="25"
+          />
+          років<br />
+        </div>
 
-      <label>Показувати з притулків</label><br />
-      <select name="shelters">
-        <option value="Усі">Усі</option>
-      </select>
+        <div class="filter-group">
+          <label class="filter-label">Показувати з притулків</label><br />
+          <select name="shelters">
+            <option value="Усі">Усі</option>
+          </select>
+        </div>
 
-      <button type="button">Очистити фільтри</button>
-      <button type="submit">Застосувати фільтри</button>
-    </form>
+        <div class="filter-buttons">
+          <button class="button" type="button">Очистити фільтри</button>
+          <button class="button" type="submit">Застосувати фільтри</button>
+        </div>
+      </form>
 
-    <h3>Знайдено 197 тварин</h3>
+      <h3 class="result-title">Знайдено 197 тварин</h3>
 
-    <article class="result-item">
-      <h4>Стелла</h4>
-      <img
-        src="./images/animals/stella.png"
-        alt="Стелла"
-        style="width: 400px; height: auto"
-      />
-      <p>Собака</p>
-      <p>Вік: 1 рік</p>
-      <p>Стать: Ж</p>
-      <p>Порода: Акбаш</p>
-      <p>Розмір: Великий</p>
-      <p>Вакцинація: Невідомо</p>
-    </article>
+      <section class="results-list">
+        <article class="result-item">
+          <h4 class="result-name">Стелла</h4>
+          <img
+            class="result-image"
+            src="./images/animals/stella.png"
+            alt="Стелла"
+          />
+          <div class="result-details">
+            <p class="result-detail"><strong>Тип:</strong> Собака</p>
+            <p class="result-detail"><strong>Вік:</strong> 1 рік</p>
+            <p class="result-detail"><strong>Стать:</strong> Ж</p>
+            <p class="result-detail"><strong>Порода:</strong> Акбаш</p>
+            <p class="result-detail"><strong>Розмір:</strong> Великий</p>
+            <p class="result-detail"><strong>Вакцинація:</strong> Невідомо</p>
+          </div>
+        </article>
 
-    <article class="result-item">
-      <h4>Мілка</h4>
-      <img
-        src="./images/animals/luky.png"
-        alt="Мілка"
-        style="width: 400px; height: auto"
-      />
-      <p>Кішка</p>
-      <p>Вік: 1 рік</p>
-      <p>Стать: Ж</p>
-      <p>Порода: Невідома порода</p>
-      <p>Розмір: Середній</p>
-      <p>Вакцинація: Невідомо</p>
-    </article>
+        <article class="result-item">
+          <h4 class="result-name">Мілка</h4>
+          <img
+            class="result-image"
+            src="./images/animals/luky.png"
+            alt="Мілка"
+          />
+          <div class="result-details">
+            <p class="result-detail"><strong>Тип:</strong> Кішка</p>
+            <p class="result-detail"><strong>Вік:</strong> 1 рік</p>
+            <p class="result-detail"><strong>Стать:</strong> Ж</p>
+            <p class="result-detail">
+              <strong>Порода:</strong> Невідома порода
+            </p>
+            <p class="result-detail"><strong>Розмір:</strong> Середній</p>
+            <p class="result-detail"><strong>Вакцинація:</strong> Невідомо</p>
+          </div>
+        </article>
 
-    <article class="result-item">
-      <h4>Стефані</h4>
-      <img
-        src="./images/animals/stefani.png"
-        alt="Стефані"
-        style="width: 400px; height: auto"
-      />
-      <p>Кішка</p>
-      <p>Вік: 1 рік</p>
-      <p>Стать: Ж</p>
-      <p>Порода: Невідома порода</p>
-      <p>Розмір: Маленький</p>
-      <p>Вакцинація: Невідомо</p>
-    </article>
+        <article class="result-item">
+          <h4 class="result-name">Стефані</h4>
+          <img
+            class="result-image"
+            src="./images/animals/stefani.png"
+            alt="Стефані"
+          />
+          <div class="result-details">
+            <p class="result-detail"><strong>Тип:</strong> Кішка</p>
+            <p class="result-detail"><strong>Вік:</strong> 1 рік</p>
+            <p class="result-detail"><strong>Стать:</strong> Ж</p>
+            <p class="result-detail">
+              <strong>Порода:</strong> Невідома порода
+            </p>
+            <p class="result-detail"><strong>Розмір:</strong> Маленький</p>
+            <p class="result-detail"><strong>Вакцинація:</strong> Невідомо</p>
+          </div>
+        </article>
+      </section>
+    </section>
   </body>
 </html>
