@@ -70,29 +70,46 @@
       <!-- Про нас -->
       <section id="we-section" class="we-section">
         <div class="container">
-          <h2 class="we-title section-title">Хто ми і чим займаємося</h2>
-          <p class="we-text">
-            <span>Meowspet</span> - це ініціатива, що базується на вірі в
-            благородну місію допомоги тваринам.
-          </p>
-          <h3>Нинішня проблема</h3>
-          <p>
-            Нині притулки переповнені, і їм не вистачає допомоги. Багато тварин
-            потребують нових домівок і турботи.
-          </p>
-          <img
-            class="image-float"
-            src="./images/dogs_pink.jpg"
-            alt="Собаки на рожевому фоні"
-            style="width: 400px; height: auto"
-          />
-          <h3>Як ми вирішуємо цю проблему?</h3>
-          <p>
-            Наш проєкт збирає інформацію про тварин з різних притулків і
-            об'єднує її в одному місці. Ми створюємо зручну систему пошуку та
-            усиновлення тварин, щоб більше людей могли легко знаходити і брати
-            вихованців із притулків.
-          </p>
+          <!-- Випадаючий блок "Хто ми і чим займаємося" -->
+          <button id="toggle-we-about" class="dropdown-toggle">
+            Хто ми і чим займаємося
+          </button>
+          <div id="we-about-content" class="dropdown-content">
+            <p class="we-text">
+              <span>Meowspet</span> - це ініціатива, що базується на вірі в
+              благородну місію допомоги тваринам.
+            </p>
+          </div>
+
+          <!-- Випадаючий блок "Нинішня проблема" -->
+          <button id="toggle-we-problem" class="dropdown-toggle">
+            Нинішня проблема
+          </button>
+          <div id="we-problem-content" class="dropdown-content">
+            <p>
+              Нині притулки переповнені, і їм не вистачає допомоги. Багато
+              тварин потребують нових домівок і турботи.
+            </p>
+            <img
+              class="image-float"
+              src="./images/dogs_pink.jpg"
+              alt="Собаки на рожевому фоні"
+              style="width: 400px; height: auto"
+            />
+          </div>
+
+          <!-- Випадаючий блок "Як ми вирішуємо цю проблему?" -->
+          <button id="toggle-we-solution" class="dropdown-toggle">
+            Як ми вирішуємо цю проблему?
+          </button>
+          <div id="we-solution-content" class="dropdown-content">
+            <p>
+              Наш проєкт збирає інформацію про тварин з різних притулків і
+              об'єднує її в одному місці. Ми створюємо зручну систему пошуку та
+              усиновлення тварин, щоб більше людей могли легко знаходити і брати
+              вихованців із притулків.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -227,5 +244,7 @@
         </div>
       </nav>
     </footer>
+    <!-- Підключення JavaScript файлу -->
+    <script src="./js/index.js"></script>
   </body>
 </html>

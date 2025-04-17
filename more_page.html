@@ -12,29 +12,46 @@
       <a class="back-link" href="index.html">Назад на головну</a>
       <h1 class="page-title">Як допомогти притулкам і тваринам</h1>
 
-      <section class="help-topic">
-        <h2 class="help-title">Волонтерство у притулках</h2>
+      <!-- Випадаючий блок "Волонтерство у притулках" -->
+      <button
+        id="toggle-volunteering"
+        class="dropdown-toggle volunteering-toggle"
+      >
+        Волонтерство у притулках
+      </button>
+      <div
+        id="volunteering-content"
+        class="dropdown-content volunteering-content"
+      >
         <p class="help-text">
           Станьте волонтером і допоможіть притулкам, підтримуючи тварин через
           прогулянки, догляд, прибирання та соціалізацію.
         </p>
-      </section>
+      </div>
 
-      <section class="help-topic">
-        <h2 class="help-title">Пожертви на підтримку</h2>
+      <!-- Випадаючий блок "Пожертви на підтримку" -->
+      <button id="toggle-donations" class="dropdown-toggle donations-toggle">
+        Пожертви на підтримку
+      </button>
+      <div id="donations-content" class="dropdown-content donations-content">
         <p class="help-text">
           Допоможіть фінансово або через пожертви корму, ліків чи речей. Ви
           можете зробити разовий внесок або стати регулярним донором.
         </p>
-      </section>
+      </div>
 
-      <section class="help-topic">
-        <h2 class="help-title">Усиновлення тварин</h2>
+      <!-- Випадаючий блок "Усиновлення тварин" -->
+      <button id="toggle-adoption" class="dropdown-toggle adoption-toggle">
+        Усиновлення тварин
+      </button>
+      <div id="adoption-content" class="dropdown-content adoption-content">
         <p class="help-text">
           Дайте дім тварині, яка цього потребує. Дізнайтеся більше про процес
           усиновлення, як підготуватися та на що звернути увагу.
         </p>
-      </section>
+      </div>
     </section>
+    <!-- Підключення JavaScript файлу -->
+    <script src="./js/more.js"></script>
   </body>
 </html>

@@ -48,27 +48,6 @@
         </div>
 
         <div class="filter-group">
-          <label class="filter-label">Тривалість перебування у притулку</label
-          ><br />
-          <input
-            type="number"
-            name="shelter_time_min"
-            min="0"
-            max="25"
-            value="0"
-          />
-          років<br />
-          <input
-            type="number"
-            name="shelter_time_max"
-            min="0"
-            max="25"
-            value="25"
-          />
-          років<br />
-        </div>
-
-        <div class="filter-group">
           <label class="filter-label">Показувати з притулків</label><br />
           <select name="shelters">
             <option value="Усі">Усі</option>
@@ -84,61 +63,11 @@
       <h3 class="result-title">Знайдено 197 тварин</h3>
 
       <section class="results-list">
-        <article class="result-item">
-          <h4 class="result-name">Стелла</h4>
-          <img
-            class="result-image"
-            src="./images/animals/stella.png"
-            alt="Стелла"
-          />
-          <div class="result-details">
-            <p class="result-detail"><strong>Тип:</strong> Собака</p>
-            <p class="result-detail"><strong>Вік:</strong> 1 рік</p>
-            <p class="result-detail"><strong>Стать:</strong> Ж</p>
-            <p class="result-detail"><strong>Порода:</strong> Акбаш</p>
-            <p class="result-detail"><strong>Розмір:</strong> Великий</p>
-            <p class="result-detail"><strong>Вакцинація:</strong> Невідомо</p>
-          </div>
-        </article>
-
-        <article class="result-item">
-          <h4 class="result-name">Мілка</h4>
-          <img
-            class="result-image"
-            src="./images/animals/luky.png"
-            alt="Мілка"
-          />
-          <div class="result-details">
-            <p class="result-detail"><strong>Тип:</strong> Кішка</p>
-            <p class="result-detail"><strong>Вік:</strong> 1 рік</p>
-            <p class="result-detail"><strong>Стать:</strong> Ж</p>
-            <p class="result-detail">
-              <strong>Порода:</strong> Невідома порода
-            </p>
-            <p class="result-detail"><strong>Розмір:</strong> Середній</p>
-            <p class="result-detail"><strong>Вакцинація:</strong> Невідомо</p>
-          </div>
-        </article>
-
-        <article class="result-item">
-          <h4 class="result-name">Стефані</h4>
-          <img
-            class="result-image"
-            src="./images/animals/stefani.png"
-            alt="Стефані"
-          />
-          <div class="result-details">
-            <p class="result-detail"><strong>Тип:</strong> Кішка</p>
-            <p class="result-detail"><strong>Вік:</strong> 1 рік</p>
-            <p class="result-detail"><strong>Стать:</strong> Ж</p>
-            <p class="result-detail">
-              <strong>Порода:</strong> Невідома порода
-            </p>
-            <p class="result-detail"><strong>Розмір:</strong> Маленький</p>
-            <p class="result-detail"><strong>Вакцинація:</strong> Невідомо</p>
-          </div>
-        </article>
+        <!-- Список результатів -->
       </section>
     </section>
+
+    <!-- Підключення JavaScript файлу -->
+    <script src="./js/search.js"></script>
   </body>
 </html>

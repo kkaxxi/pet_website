@@ -181,6 +181,13 @@ button:hover,
   flex-grow: 1;
   justify-content: center;
 }
+.carousel {
+  width: 100%;
+  height: 900px;
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0; /* Відступи зверху і знизу */
+}
 
 /* Footer */
 .footer {
@@ -208,6 +215,27 @@ button:hover,
   background-color: var(--site-dark);
   padding: var(--padding-section);
   margin-bottom: 0;
+}
+.dropdown-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.dropdown-toggle {
+  background-color: var(--nav);
+  border: none;
+  color: var(--text-dark);
+  padding: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.dropdown-toggle:hover {
+  background-color: #e0e0e0;
 }
 
 /* Section Titles */
@@ -253,6 +281,21 @@ button:hover,
   background-color: var(--list);
   margin-bottom: 0;
 }
+/**/
+.animate-title {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* Forms */
 form,
@@ -282,6 +325,37 @@ form,
 textarea {
   resize: vertical;
   height: 150px;
+}
+/* Banner styling */
+.moving-banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--accent-color);
+  color: var(--text-dark);
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* Tooltip placeholder style */
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.tooltip {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Help & Search Pages */
@@ -366,6 +440,35 @@ textarea {
   float: left;
   margin: 0 20px 20px 0;
   z-index: 1;
+}
+/* Загальні стилі для всіх випадаючих блоків у секції "Допомога" */
+.help-section .dropdown-toggle {
+  background-color: #607d8b; /* Сірий синій фон для кнопок */
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 1.2em;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.help-section .dropdown-toggle:hover {
+  background-color: #455a64; /* Темніший відтінок при наведенні */
+}
+
+.help-section .dropdown-content {
+  display: none; /* Приховуємо контент за замовчуванням */
+  background-color: var(--site-dark); /* Світлий сірий синій фон для контенту */
+  padding: 15px;
+  border: 1px solid var(--site-light); /* Світло-сіра рамка */
+  border-radius: 5px;
+  color: #37474f; /* Темний текст */
+  margin-top: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для додаткової глибини */
 }
 
 /* Responsive */
